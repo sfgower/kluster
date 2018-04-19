@@ -1,5 +1,9 @@
 # kluster
 
+LICENSE
+
+Apache 2.0.
+
 OVERVIEW
 
 This clustering algorithm is a variant of the FP-Growth algorithm. One paper that describes that algorithm well
