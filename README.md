@@ -33,6 +33,7 @@ FP-Growth algorithm.  Please note, however, that this implementation does not do
 
 SETUP
 
+   This project was built using Maven. So you will need maven to build this project and run its tests.
    Clone the repository
    Do 'mvn test' and that will build everything and run the tests
    
