@@ -61,16 +61,10 @@ identifier with each such unique name; however, if you have say, 100 million suc
 You will run out of memory.
 
 Of course, one could use a database - SQL or NoSQL to address this problem.  But if you want a lighter weight, faster
-solution things are trickier. Unfortunately, as far as I know, there are no good ways to assign 
-unique long IDs to strings so that very little memory is used. 
+solution things are trickier. Take a look at https://github.com/sfgower/text2number. That should help you turn 
+collection of strings into a collection of longs. 
 
-Well... I do have code that does this, and may open source
-that code at some point. If you have this problem, let me know and I will see what it can do. That code is far more
-complex that this code, but using very minimal main-memory data, tt can assign (or retrieve) a long ID for a string very
-quickly, with average access time involving 1.7 very fast operations for reads. With optimizations, that accss speed could
-be reduced significantly. Paired with persistent data, such as Avro, this code could also, given any identifier for a string, 
-return that string, and do this very quickly, simply by fetching the n-th item from the n-th Avro file, thus retrieving
-the string associated with a long ID. Of course, that would be faster with a caching layer too....
+
 
 
 
